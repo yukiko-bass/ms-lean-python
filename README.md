@@ -52,6 +52,19 @@ $ curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
   $ /bin/python3.10 -m pip install -U flake8
   ```
 
+# venvの作成
+
+Ubuntu 環境の場合は別途 python3.10-venv(python3-venv) のインストールが必要らしい
+```
+$ sudo apt-get install python3.10-venv
+```
+
+そのあとに作成
+```
+$ python3.10 -m venv env
+```
+
+
 ## error解消
 
 - ModuleNotFoundError: No module named 'distutils.util'
